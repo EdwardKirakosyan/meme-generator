@@ -1,37 +1,36 @@
 * {
+  user-select: none;
   box-sizing: border-box;
 }
 
 body {
   font-family: "Karla", sans-serif;
-  margin: 0;
+  margin: 0 auto;
+
 }
 
 main {
   padding: 36px;
+  background-color: rgba(128, 128, 128, 0.176);
+  max-height: 100%;
 }
 
 .header {
   display: flex;
   align-items: center;
   height: 65px;
-  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  background: radial-gradient(circle, #ff8239ef 1.18%, #ff4c0b90 100%);
   color: white;
   padding: 20px;
 }
 
-.header--image {
-  height: 100%;
-  margin-right: 6px;
-}
-
 .header--title {
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   margin-right: auto;
 }
 
 .header--project {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
@@ -43,20 +42,30 @@ main {
 }
 
 .form--input {
+
   font-family: "Karla", sans-serif;
   border-radius: 5px;
-  border: 1px solid #d5d4d8;
+  border: 1px solid #e9e9e9;
   text-indent: 5px;
 }
 
 .form--button {
+  margin: 0 auto;
   grid-column: 1 / -1;
   font-family: "Karla", sans-serif;
-  border-radius: 5px;
-  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  border-radius: 8px;
+  background-color: #ff44008e;
   color: white;
   border: none;
   cursor: pointer;
+}
+
+.form--button:hover {
+  background-color: #ff4400c4;
+}
+
+.form--button:focus {
+  outline: none;
 }
 
 .meme {
