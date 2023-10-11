@@ -10,7 +10,7 @@ body {
 }
 
 main {
-  padding: 36px;
+  padding: 1em;
   background-color: rgba(128, 128, 128, 0.176);
   max-height: 100%;
 }

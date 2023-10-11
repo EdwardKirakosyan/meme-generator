@@ -39,7 +39,7 @@ export default function Meme() {
       <div className="form">
         <input
           type="text"
-          placeholder="Top text"
+          placeholder="Type top text here..."
           className="form--input"
           name="topText"
           value={meme.topText}
@@ -47,14 +47,14 @@ export default function Meme() {
         />
         <input
           type="text"
-          placeholder="Bottom text"
+          placeholder="Type bottom text here..."
           className="form--input"
           name="bottomText"
           value={meme.bottomText}
           onChange={handleChange}
         />
         <button className="form--button" onClick={getMemeImage}>
-          Get a new meme image 🖼
+          Get a new meme image
         </button>
       </div>
       <div className="meme">
