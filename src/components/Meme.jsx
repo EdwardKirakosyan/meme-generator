@@ -4,7 +4,7 @@ export default function Meme() {
   const [meme, setMeme] = React.useState({
     topText: "",
     bottomText: "",
-    randomImage: "http://i.imgflip.com/1bij.jpg",
+    randomImage: "https://i.imgflip.com/28s2gu.jpg",
   })
   const [allMemes, setAllMemes] = React.useState([])
 
@@ -39,7 +39,7 @@ export default function Meme() {
       <div className="form">
         <input
           type="text"
-          placeholder="Type top text here..."
+          placeholder="top text here..."
           className="form--input"
           name="topText"
           value={meme.topText}
@@ -47,14 +47,14 @@ export default function Meme() {
         />
         <input
           type="text"
-          placeholder="Type bottom text here..."
+          placeholder="bottom text here..."
           className="form--input"
           name="bottomText"
           value={meme.bottomText}
           onChange={handleChange}
         />
         <button className="form--button" onClick={getMemeImage}>
-          Get a new meme image
+          New Meme Image
         </button>
       </div>
       <div className="meme">
